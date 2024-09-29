@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+             width: 50%;
+             border-collapse:collapse;
+        }
+        table , th, td {
+            border: 1px solid blueviolet;
+
+
+        } 
+        th , td {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+
+    </style>
+    <table>
+        <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Student Class</th>
+            <th>Student Roll No.</th>
+        </tr>
+        </thead>
+        <tbody id="studentinfo"></tbody>
+    </table>
+    <button id="studentdetail" onclick="printArray()">Print Details</button>
+
+
+
+    <script>
+        function printArray (){       
+             const students = [
+            {Name:"John" , Class: "12th"  ,RollNo:"15"} ,
+            {Name:"Allen" , Class: "9th" ,RollNo:"37"} ,
+            {Name:"Richard" , Class: "11th" ,RollNo:"65"} , ]
+         
+
+            var a = document.getElementById('studentdetail');
+            var abc = document.getElementById('studentinfo');
+            abc.innerHTML = '' ;
+
+            students.filter(student => {
+                let row = `<tr>
+                             <td>${student.Name}</td>
+                             <td>${student.Class}</td>
+                             <td>${student.RollNo}</td>
+                             <tr>`
+                abc.innerHTML += row;
+            })};
+
+    </script>
+</body>
+</html>

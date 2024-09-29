@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h3 style="background-color: blueviolet;">session Enter Your Email</h3>
+        <form>
+            <label for="email">Email:</label>
+            <input id="mail" type="email"><br><br>
+            <label for="password">Password:</label>
+            <input id="pass" type="password">
+            <button onclick="saveData()" type="button">Save it</button>
+        
+        </form>
+        <script>
+            function  saveData() {
+                let a = document.getElementById('mail').value;
+                let b = document.getElementById('pass').value;
+
+                let c = localStorage.getItem('mail');
+                let d = localStorage.getItem('pass');
+                if( a == c && b == d){
+                    sessionStorage.setItem('mail', a);
+                sessionStorage.setItem('pass',b);
+               
+                
+                alert('Session saved!');
+
+                }
+
+
+                
+                
+            }
+        </script>
+    
+        
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="screen" onclick="prntArray()">Print IT</button>
+    <div id="demo"></div>
+    <script>
+        function prntArray() {
+            let myArray = [1,2,3,4,5,6,7,8,9,10];
+            var div =document.getElementById('demo');
+
+            var a = document.getElementById('screen');
+            for(var i = 0 ; i < myArray.length ; i++){
+            console.log(i);
+            div.innerHTML += `<div>${myArray[i]}</div>`;
+
+            
+        }
+    }
+        
+        console.log('myArray')
+    </script>
+</body>
+</html>

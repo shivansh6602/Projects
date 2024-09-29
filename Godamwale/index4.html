@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container d-flex">
+        <a class="navbar-brand" href="#">
+          <img src="https://i0.wp.com/godamwale.com/wp-content/uploads/2022/11/logo.png?resize=300%2C50&ssl=1"
+            alt="Brand Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">TECHNOLOGY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">NETWORK</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                RESOURCES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">BLOGS</a></li>
+                <li><a class="dropdown-item" href="#">VIDEOS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-danger border border-danger" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-danger border border-danger" href="#">List your WareHouse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--
+    <div id="carouselExampleCaptions" class="carousel slide mt-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://godamwale.com/wp-content/uploads/2024/09/image-126.jpg" class="d-block w-100" alt="img1">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="heading">3PL Solutions in Mumbai</h2>
+            <p>Seamlessly Maintain Real-Time Inventory Anywhere You Work. Keep Your Stock Accurate with Ease!</p>
+            <button type="button" class="btn btn-danger">Enquiry Now</button>
+
+
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://godamwale.com/wp-content/uploads/2024/09/image-126.jpg" class="d-block w-100" alt="img2">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="heading">3PL Solutions in Mumbai</h2>
+            <p>Seamlessly Maintain Real-Time Inventory Anywhere You Work. Keep Your Stock Accurate with Ease!</p>
+            <button type="button" class="btn btn-danger">Enquiry Now</button>
+
+
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active first" data-bs-interval="10000">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <h1 id="head10">3PL Solutions in<br>
+                  Mumbai</h1>
+                  <p id="para6">Seamlessly Maintain Real-Time Inventory Anywhere <br>You Work. Keep Your Stock Accurate with Ease!"</p>
+                  <button type="button" class="btn btn-danger first" id="btnfirst">Enquire Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item second" data-bs-interval="2000">
+          <div class="container"></div>
+            <div class="row">
+              <div class="col-6">
+                <h1 id="head10">3PL Solutions in<br>
+                  Mumbai</h1>
+                  <p id="para6">Seamlessly Maintain Real-Time Inventory Anywhere <br>You Work. Keep Your Stock Accurate with Ease!"</p>
+                  <button type="button" class="btn btn-danger first" id="btnfirst">Enquire Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="box2">
+      <div class="para">
+        <h2 class="heading2">Scale your buisness with<br> Godamwale 3PL<br> Fulfilment Solutions</h2>
+        <div class="container1">
+          <p > Godamwale is a premier marketplace dedicated to delivering efficient supply chain solutions to rapidly
+            growing digital enterprises and large corporations.</p>
+          <p>Godamwale is a premier marketplace dedicated to delivering efficient supply chain solutions to rapidly
+            growing digital enterprises and large corporations.</p>
+          <p>Godamwale is a premier marketplace dedicated to delivering efficient supply chain solutions to rapidly
+            growing digital enterprises and large corporations.</p>
+          <button type="button" class="btn btn-danger " id="btn1" >Read More</button>
+        </div>
+      </div>
+      <div class="image1">
+        <img id="topimg"
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/2dbd49d6e1aa21b5c30052570b957e61.Union.png"
+          alt="photo">
+      </div>
+    </div>
+    <div class="heading3">
+      <h2 id="letter" >We offer comprehensive and secured 3PL<br>
+        solution for your Business in Mumbai</h2>
+    </div>
+    <div class="box3">
+      <div>
+        <img
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-162721.png"
+          alt="photo2">
+        <p>1 Lakh+ Sq. ft.<br> 
+          Warehouse Space</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-162721.png"
+          alt="photo3">
+        <p>Reduced Logistics<br>
+          Cost</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-162721.png"
+          alt="photo4">
+        <p>Inventory Accuracy<br>
+          99.99%</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-162721.png"
+          alt="photo5">
+        <p>Maximum Flexibility<br>
+          & Scalability</p>
+      </div>
+
+    </div>
+    <div class="box4">
+      <div>
+        <img
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-162721.png"
+          alt="photo6">
+        <p>1 Lakh+ Sq. ft. <br>
+          Warehouse Space</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-162721.png"
+          alt="photo7">
+        <p>Reduced Logistics
+          <br>Cost
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-162721.png"
+          alt="photo8">
+        <p>Inventory Accuracy<br>
+          99.99%</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-162721.png"
+          alt="photo9">
+        <p>Maximum Flexibility<br>
+          & Scalability</p>
+      </div>
+    </div>
+    <div class="heading4">
+      <div>
+        <h1>Discover the Best <br>Warehousing solutions<br> in Mumbai</h1>
+        <div class="para1">
+          <p>Bhiwandi<br>
+            Indian Corporation Compound, Mankoli Bldg No.165/168, Village,opp. Gajanan petrol pump, Dapode, Bhiwandi,
+            Maharashtra 421302</p>
+        </div>
+        <div class="para2">
+          <p>Bhiwandi<br>
+            Indian Corporation Compound, Mankoli Bldg No.165/168, Village,opp. Gajanan petrol pump, Dapode, Bhiwandi,
+            Maharashtra 421302
+          </p>
+        </div>
+        <button type="button" class="btn btn-danger" style="color: white;margin-left: 7%;font-size: 14px;">Check for more Location</button>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56945.125213517764!2d80.9579249292969!3d26.869506654798997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd3a99fba681%3A0xe82b751c187af53b!2sTaj%20Mahal%20Lucknow!5e0!3m2!1sen!2sin!4v1726389134388!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>"
+      </div>
+    </div>
+    <div class="heading5">
+      <div ><img id="img22"
+        src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/278cff763f66d271b9b22ac3e9da12e6.Group-162613hhs.png"
+        alt="img3">
+</div>
+<div class="box5">
+<h1 id="head1">Manage your inventory <br>at your fingertips</h1>
+<p id="para3">As a leading warehousing company, we understand the<br> challenges that most businesses face. That's why we developed<br> our warehouse and inventory management software, designed to <br>address all your inventory management needs efficiently.</p>
+<div class="all">
+<div class="onep"><img id="img23"  src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/98a39d41425aa5fe0d2e2522bd97def6.Group-20364q.png"
+alt="logo1">
+<div class="short">
+<h2>99%</h2>
+<h5>Shipping Accuracy
+</h5></div>
+</div>
+<div class="twop">
+<img id="img23" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/98a39d41425aa5fe0d2e2522bd97def6.Group-20364z.png"
+alt="logo2">
+<div class="short">
+<h2>30%</h2>
+<h5>Faster Shipping
+</h5></div>
+</div>
+</div>
+<div class="twopara">
+<div class="threep">
+<img id="img23" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/98a39d41425aa5fe0d2e2522bd97def6.Group-20369s.png"
+alt="logo3">
+<div class="short">
+<h2>35%</h2>
+<h5>Warehouse Cost
+</h5>
+</div></div>
+<div class="threep">
+<img id="img23"  src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/98a39d41425aa5fe0d2e2522bd97def6.Group-20370d.png"
+alt="logo4">
+<div class="short">
+<h2>3x</h2>
+<h5>Picking Efficiency
+</h5></div>
+</div>
+</div>
+</div>
+    </div>
+<div>
+    <h2 id="heading6">Our Sevices</h2>
+<div class="heading7">
+  <div class="box6">
+    <img id="logo5" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-20347j.png">
+<h4 id="head2">B2B & B2C Fulfillment</h4>
+<p>seamless B2B and B2C fulfillment<br> services through our extensive network <br>of 300+ 3PL centers across India</p></div>
+<div class="box7">
+  <img id="logo5" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-20347j.png">
+  <h4 id="head3">Cross Docking
+  </h4>
+  <p>seamless B2B and B2C fulfillment<br> services through our extensive network <br>of 300+ 3PL centers across India
+  </p>
+</div>
+<div class="box8">
+  <img id="logo5" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-20347j.png">
+  <h4 id="head3">Cold Storage</h4>
+  <p>seamless B2B and B2C fulfillment<br> services through our extensive network <br>of 300+ 3PL centers across India
+  </p>
+</div>
+  </div>
+  <div class="heading7">
+    <div class="box6">
+      <img id="logo5" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-20347j.png">
+  <h4 id="head2">Kitting & Other VAS</h4>
+  <p>seamless B2B and B2C fulfillment<br> services through our extensive network <br>of 300+ 3PL centers across India</p></div>
+  <div class="box7">
+    <img id="logo5" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-20347j.png">
+    <h4 id="head4">Retail Distribution</h4>
+    <p>seamless B2B and B2C fulfillment<br> services through our extensive network <br>of 300+ 3PL centers across India
+    </p>
+  </div>
+  <div class="box8">
+    <img id="logo5" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/958ede922a43d2e3e99ed413e2e62847.Group-20347j.png">
+    <h4 id="head4">Control Tower ​Dashboard
+    </h4>
+    <p>seamless B2B and B2C fulfillment<br> services through our extensive network <br>of 300+ 3PL centers across India
+    </p>
+  </div>
+    </div>
+</div>
+<!--
+    <div class="heading8"> 
+  <h2 id="head5">Our Videos</h2>
+  <p>One platform to manage your all logistics operation</p>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img id="video" src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" class="d-block " alt="abc">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img id="video" src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" class="d-block " alt="abc2">
+      </div>
+      <d+  class="carousel-item">
+        <img id="video" src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" class="d-block " alt="abc3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="heading9">
+    <h2 id="head6">What our clients says about our service</h2>
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <q>“ Shipping my products for sale faster and helping my business<br> grow more. Always the best choice for warehouse maintenance<br> and shipping with best price and quality of services ”</q>
+        <p class="author">- Saksham Wadelkar</p>
+        <p>india</p>
+      </div>
+      
+      <div class="mySlides">
+        <q>“ Shipping my products for sale faster and helping my business<br> grow more. Always the best choice for warehouse maintenance<br> and shipping with best price and quality of services ”</q>
+        <p class="author">- Saksham Wadelkar</p>
+        <p>india</p>
+      </div>
+      
+     
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      </div>
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }0 
+      </script>
+      </div>  -->
+      <div class="section-padding">
+        <div class="screenshot_slider owl-carousel">
+          <div class="item">
+            <img src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" alt="" title="">
+          </div>
+          <div class="item">
+            <img src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" alt="" title="">
+          </div>
+          <div class="item">
+            <img src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" alt="" title="">
+          </div>
+          <div class="item">
+            <img src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" alt="" title="">
+          </div>
+          <div class="item">
+            <img src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" alt="" title="">
+          </div>
+          <div class="item">
+            <img src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" alt="" title="">
+          </div>
+          <div class="item">
+            <img src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" alt="" title="">
+          </div>
+          <div class="item">
+            <img src="https://godamwale.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-183839.jpg" alt="" title="">
+          </div>
+       </div>
+     </div>
+     
+<div class="heading9">
+      <h2 id="head12">What our clients says about our service</h2>
+<div class="slider-testi">
+  <div>
+     “ Shipping my products for sale faster and helping my business<br> grow more. Always the best choice for warehouse maintenance <br>and shipping with best price and quality of services ”
+    <P id="author">Saksham Wadelkar</P>
+  </div>
+  <div>
+    “ Shipping my products for sale faster and helping my business<br> grow more. Always the best choice for warehouse maintenance <br>and shipping with best price and quality of services ”
+   <p id="author"> Saksham Wadelkar</p>
+    </div>
+  <div>
+    “ Shipping my products for sale faster and helping my business <br>grow more. Always the best choice for warehouse maintenance<br> and shipping with best price and quality of services ”
+    <p id="author">Saksham Wadelkar</p>
+    </div>
+</div>
+</div>
+
+
+      <div class="heading10">
+       
+        <div class="box9">
+          <h2 id="head7">Latest Blogs</h2>
+        <a href="https://godamwale.com/warehousing-in-ahmedabad/">
+        <img id="photo6" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/godamwale.com/wp-content/uploads/2023/09/Corporate-Work-Blog-Banner-1.png" alt="abc4"></a>
+        <p style="color: red;">19 Sep 2023</p>
+        <a  style="text-decoration: none;" href="https://godamwale.com/what-is-dropshipping/">
+        <h3 id="link">Warehousing in Ahmedabad: A guide and report 2024</h3>
+      </a>
+      <p  id="para4">Ahmedabad is strategically located in the<br> western part of India. It serves as a gateway<br> to the northern and western regions of the...</p>
+     </div>
+    
+
+     <div class="box10">
+      <a href="https://godamwale.com/what-is-dropshipping/">
+        <img id="photo6" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/godamwale.com/wp-content/uploads/2024/09/gw-Blogs-1-1.jpg" alt="abc5"></a>
+        <p style="color: red;">17 Sep 2024</p>
+        <a  style="text-decoration: none;" href="https://godamwale.com/what-is-dropshipping/">
+        <h3 id="link">What is dropshipping? How does dropshipping work?</h3>
+       </a>
+       <p  id="para4">TABLE OF CONTENT: What is Dropshipping?<br> Dropshipping is a fulfillment method where<br> the retailer doesn’t keep the products they...</p>
+     </div>
+     <div class="box11">
+      <a href="https://godamwale.com/flipkart-big-billion-days-2024/">
+        <img  id="photo6" src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/godamwale.com/wp-content/uploads/2024/09/gw-Blogs10.jpg" alt="abc6"></a>
+      <p style="color: red;">10 Sep 2024</p>
+        <a style="text-decoration: none;" href="https://godamwale.com/what-is-dropshipping/">
+          <h3 id="link">Flipkart Big Billion Days 2024: Complete Order Fulfillment Process</h3>
+      </a>
+      <p id="para4">TABLE OF CONTENT: Flipkart Big Billion Days<br> 2024 date announcement Flipkart Big Billion<br> Days 2024 starts on 26th September 2024...</p>
+     </div>
+     </div>
+
+     <div class="heading11">
+      <h2 id="head8">Frequently Asked Questions</h2>
+      <div class="container mt-3">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                What is Webflow and why is it the best website builder?
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse " data-bs-parent="#accordion">
+              <div class="card-body">
+                Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation.              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                What is your favorite template from BRIX Templates?
+            </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Accordion content goes here.              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                How do you clone a template from the Showcase?
+
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Accordion content goes here.              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="heading12">
+      
+      <div>
+        <h2 id="head9">Manage Your Inventory At Your Finger Tips</h2>
+      <p id="para5">Achieve Business Excellence With Our<br> Comprehensive Fullfillment Solution In Mumbai.</p>
+      <button type="button" class="btn btn-danger" style="color: white; size: 2%;font-size: 14px;">Talk To Our Expert</button>
+
+      </div>
+      <div id="img4"> <img src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2024/09/ec8cd15a58c4881f7ad9220336a66090.Screenshot-2024-09-06-164128.jpg" alt="image44" ></div>
+     </div>
+      </body>
+      </html> 
+  </header>
+<footer class="heading14">
+  <div class="heading13">
+    <div class="box12">
+    <img src="https://cdn-kfaph.nitrocdn.com/QXLUJQKObQCHZQxoEIAZJLeJxDelSjnT/assets/images/optimized/rev-4e45470/i0.wp.com/godamwale.com/wp-content/uploads/2023/02/fd422bab45d131ac8a830ae6f6d5c4c2.Asset-4-1.png" alt="image45">
+    <p> info@godamwale.com</p>
+    <p>+91-8291540681</p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-twitter"></a>
+</div>
+
+<div class="box13">
+  <h4>Solution</h4>
+  <p>Fulfillment</p>
+  <p>Storage</p>
+  <p>Supply chain technology</p>
+  <p>3PL</p>
+</div>
+<div class="box14">
+  <h4>Resources</h4>
+  <p>Blog</p>
+  <p>About Us</p>
+</div>
+<diV class="box15">
+  <p>knowing you're always on the best service deal.</p>
+<button>Sign Up Now</button>
+</diV>
+
+  </div>
+</footer>
+<div class="heading15">
+  <div class="box16">
+    <p>© 2024 - Warehousing & Logistics company in India - All Rights Reserved Godamwale Pvt. Ltd.</p>
+  </div>
+  <div class="box17"><p>Terms of service </p> </div>
+ <div> <p id="last">Privacy Policy</p></div>
+</div>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+
+$('.slider-testi').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<button class="slick-prev">&lt;</button>', // Left arrow
+  nextArrow: '<button class="slick-next">&gt;</button>', // Right arrow
+}); 
+
+
+var owl = $('.screenshot_slider').owlCarousel({
+    loop: true,
+    responsiveClass: true,
+    nav: true,
+    margin: 0,    
+    autoplayTimeout: 4000,
+    smartSpeed: 400,
+    center: true,
+    navText: ['&#8592;', '&#8594;'],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 3
+        },
+        1200: {
+            items: 3
+        }
+    }
+});
+
+/****************************/
+
+jQuery(document.documentElement).keydown(function (event) {    
+
+    // var owl = jQuery("#carousel");
+
+    // handle cursor keys
+    if (event.keyCode == 37) {
+       // go left
+      owl.trigger('prev.owl.carousel', [400]);
+      //owl.trigger('owl.prev');
+    } else if (event.keyCode == 39) {
+       // go right
+        owl.trigger('next.owl.carousel', [400]);
+       //owl.trigger('owl.next');
+    }
+
+});
+</script>
+</body>
+
+</html>

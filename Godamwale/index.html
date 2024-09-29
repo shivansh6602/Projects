@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="background-color: aquamarine;">local Enter Your Email</h3>
+    <form action="index1.html">
+        <label for="email">Email:</label>
+        <input id="mail" type="email"><br><br>
+        <label for="password">Password:</label>
+        <input id="pass" type="password">
+        <button onclick="saveData()" type="submit">Save it</button>
+    
+    </form>
+    <script>
+        function  saveData() {
+            let a = document.getElementById('mail').value;
+            let b = document.getElementById('pass').value;
+            localStorage.setItem('mail', a);
+            localStorage.setItem('pass',b);
+            alert('saved!');
+            
+        }
+    </script>
+
+    
+</body>
+</html>
